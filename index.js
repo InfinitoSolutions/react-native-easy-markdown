@@ -140,7 +140,7 @@ class Markdown extends Component {
                     <View style={styles.listItem}>
                         {this.props.renderListBullet ? this.props.renderListBullet(extras.ordered, index) : this.renderListBullet(extras.ordered, index)}
                         <View key={'listItemContent_' + key} style={[styles.listItemContent, styles.listItemTextContent]}>
-                            <Text>{children}</Text>
+                            <View>{children}</View>
                         </View>
                     </View>
                 </View>
